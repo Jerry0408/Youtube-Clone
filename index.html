@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YouTube.com Clone</title>
+    <link rel="stylesheet" href="styles/video.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+      <div class="left-section">
+        <img class="hamburger-menu" src="icons/hamburger-menu.svg">
+        <a href="https://www.youtube.com/" target="_blank">
+        <img class="youtube-logo" src="icons/youtube-logo.svg">
+      </a>
+      </div>
+      <div class="middle-section">
+        <input class= "search-bar" type="text" placeholder="Search">
+        <button class="search-button">
+          <img class="search-icon" src="icons/search.svg">
+          <div class="tooltip">Search</div>
+        </button>
+        <button class="voice-search-button">
+          <img class="voice-search-icon" src="icons/voice-search-icon.svg">
+          <div class="tooltip">Search with your voice</div>
+        </button>
+      </div>
+      <div class="right-section">
+        <div class="upload-icon-container">
+          <img class="upload-icon" src="icons/upload.svg">
+          <div class="tooltip">Create</div>
+        </div>
+        <div class="youtube-apps-container">
+        <img class="youtube-apps-icon" src="icons/youtube-apps.svg">
+        <div class="tooltip">YouTube apps</div>
+        </div>
+        <div class="notifications-icon-container">
+          <img class="notifications-icon" src="icons/notifications.svg">
+          <div class="notifications-count">3</div>
+          <div class="tooltip">Notifications</div>
+        </div>
+        
+        <img class="current-user-picture" src="pics/my-channel.jpg">
+      </div>
+    </header>
+    <nav class="sidebar">
+      <div class="sidebar-link">
+        <img src="icons/home.svg">
+        <div>
+          Home
+        </div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/explore.svg">
+        <div>Explore</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/subscriptions.svg">
+        <div>Subscriptions</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/originals.svg">
+        <div>Originals</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/youtube-music.svg">
+        <div>YouTube Music</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/library.svg">
+        <div>Library</div>
+      </div>
+    </nav>
+    <main>
+      <section class="video-grid">
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY" target="_blank">
+              <img class="thumbnail" src="pics/thumbnail-1.webp">
+            </a>
+            <div class="video-time">14:20</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/c/mkbhd" target="_blank" class="profile-pic-link">
+                <img class="profile-picture" src="pics/channel-1.jpeg">
+              </a>
+              <div class="tooltip">
+                <div>
+                  <img class="profile-picture" src="pics/channel-1.jpeg">
+                </div>
+                <div>
+                  <p class="tooltiptext1">Marques Brownlee</p>
+                  <p class="tooltiptext2">16M subscribers</p>
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <div>
+                <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY" target="_blank" class="video-title-link">
+                <p class="video-title">
+                  Talking Tech and AI with Google CEO Sundar Pichai!
+                </p>
+                </a>
+              </div>
+              <a href="https://www.youtube.com/c/mkbhd" target="_blank" class="video-title-link">
+                <p class="video-author">
+                  Marques Brownlee
+                </p>
+              </a>
+              <p class="video-stats">
+                3.4M views · 6 months ago
+              </p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk" target="_blank">
+            <img class="thumbnail" src="pics/thumbnail-2.webp">
+            </a>
+            <div class="video-time">8:22</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/c/markiplier" target="_blank" class="profile-pic-link">
+                <img class="profile-picture" src="pics/channel-2.jpeg">
+              </a>
+              <div class="tooltip">
+                <div>
+                  <img class="profile-picture" src="pics/channel-2.jpeg">
+                </div>
+                <div>
+                  <p class="tooltiptext1">Markiplier</p>
+                  <p class="tooltiptext2">33M subscribers</p>
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <div>
+                <a class="video-title-link" href="https://www.youtube.com/watch?v=mP0RAo9SKZk">
+                <p class="video-title">
+                  Try Not To Laugh Challenge #9
+                </p></a>
+              </div>
+              <a href="https://www.youtube.com/c/markiplier" target="_blank" class="video-title-link">
+                <p class="video-author">
+                  Markiplier
+                </p>
+              </a>
+              <p class="video-stats">
+                19M views · 4 years ago
+              </p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=FgjPQQeTh1w" target="_blank">
+            <img class="thumbnail" src="pics/thumbnail-3.webp">
+            </a>
+            <div class="video-time">9:13</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/user/SSSniperWolf" target="_blank" class="profile-pic-link">
+              <img class="profile-picture" src="pics/channel-3.jpeg">
+            </a>
+            <div class="tooltip">
+              <div>
+                <img class="profile-picture" src="pics/channel-3.jpeg">
+              </div>
+              <div>
+                <p class="tooltiptext1">SSSniperWolf</p>
+                <p class="tooltiptext2">33M subscribers</p>
+              </div>
+            </div>
+            </div>
+            <div class="video-info">
+              <div>
+                <a class="video-title-link" href="https://www.youtube.com/watch?v=FgjPQQeTh1w" target="_blank">
+                <p class="video-title">
+                  Crazy Tik Toks Taken Moments Before DISASTER
+                </p>
+                </a>
+              </div>
+              <a href="https://www.youtube.com/user/SSSniperWolf" target="_blank" class="video-title-link">
+                <p class="video-author">
+                  SSSniperWolf
+                 </p>
+              </a>
+              <p class="video-stats">
+                12M views · 1 year ago
+              </p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=094y1Z2wpJg" target="_blank">
+            <img class="thumbnail" src="pics/thumbnail-4.webp">
+          </a>
+            <div class="video-time">22:09</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/c/veritasium" target="_blank" class="profile-pic-link">
+              <img class="profile-picture" src="pics/channel-4.jpeg">
+            </a>
+            <div class="tooltip">
+              <div>
+                <img class="profile-picture" src="pics/channel-4.jpeg">
+              </div>
+              <div>
+                <p class="tooltiptext1">Veritasium</p>
+                <p class="tooltiptext2">13M subscribers</p>
+              </div>
+            </div>
+            </div>
+            <div class="video-info">
+              <div>
+                <a href="https://www.youtube.com/watch?v=094y1Z2wpJg" target="_blank" class="video-title-link">
+                <p class="video-title">
+                  The Simplest Math Problem No One Can Solve - Collatz Conjecture
+                </p>
+                </a>
+             </div>
+              <a href="https://www.youtube.com/c/veritasium" target="_blank" class="video-title-link">
+              <p class="video-author">
+                Veritasium
+              </p>
+            </a>
+              <p class="video-stats">
+                18M views · 4 months ago
+              </p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=86CQq3pKSUw" target="_blank">
+              <img class="thumbnail" src="pics/thumbnail-5.webp">
+            </a>
+            <div class="video-time">11:17</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/c/CSDojo" target="_blank" class="profile-pic-link"> 
+              <img class="profile-picture" src="pics/channel-5.jpeg">
+            </a>
+            <div class="tooltip">
+              <div>
+                <img class="profile-picture" src="pics/channel-5.jpeg">
+              </div>
+              <div>
+                <p class="tooltiptext1">CS Dojo</p>
+                <p class="tooltiptext2">1.8M subscribers</p>
+              </div>
+            </div>
+            </div>
+            <div class="video-info">
+              <div>
+                <a href="https://www.youtube.com/watch?v=86CQq3pKSUw" target="_blank" class="video-title-link">
+                  <p class="video-title">
+                    Kadane's Algorithm to Maximum Sum Subarray Problem
+                  </p>
+                </a>
+              </div>
+              <a href="https://www.youtube.com/c/CSDojo" target="_blank" class="video-title-link">
+              <p class="video-author">
+                CS Dojo
+              </p>
+              </a>
+              <p class="video-stats">
+                519K views · 5 years ago
+              </p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=yXWw0_UfSFg" target="_blank">
+              <img class="thumbnail" src="pics/thumbnail-6.webp">
+            </a>
+            <div class="video-time">19:59</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/channel/UCX6OQ3DkcsbYNE6H8uQQuVA" target="_blank" class="profile-pic-link">
+              <img class="profile-picture" src="pics/channel-6.jpeg">
+            </a>
+            <div class="tooltip">
+              <div>
+                <img class="profile-picture" src="pics/channel-6.jpeg">
+              </div>
+              <div>
+                <p class="tooltiptext1">MrBeast</p>
+                <p class="tooltiptext2">105M subscribers</p>
+              </div>
+            </div>
+            </div>
+            <div class="video-info">
+              <div>
+                <a href="https://www.youtube.com/watch?v=yXWw0_UfSFg" target="_blank" class="video-title-link">
+                <p class="video-title">
+                    Anything You Can Fit In The Circle I'll Pay For
+                </p>
+                </a>
+              </div>
+              <a href="https://www.youtube.com/channel/UCX6OQ3DkcsbYNE6H8uQQuVA" target="_blank" class="video-title-link">
+              <p class="video-author">
+                MrBeast
+              </p>
+            </a>
+              <p class="video-stats">
+                141M views · 1 year ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=6_n7ru1e-rg" target="_blank">
+              <img class="thumbnail" src="pics/thumbnail-7.webp">
+            </a>
+            <div class="video-time">2:43</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/channel/UCIqCBL5tFT8v1-wqKZWX9gA" target="_blank" class="profile-pic-link">
+              <img class="profile-picture" src="pics/channel-7.jpg">
+            </a>
+            <div class="tooltip">
+              <div>
+                <img class="profile-picture" src="pics/channel-7.jpg">
+              </div>
+              <div>
+                <p class="tooltiptext1">Den ProHD</p>
+                <p class="tooltiptext2">177K subscribers</p>
+              </div>
+            </div>
+            </div>
+            <div class="video-info">
+              <div>
+                <a href="https://www.youtube.com/watch?v=6_n7ru1e-rg" target="_blank" class="video-title-link">
+                <p class="video-title">
+                    Kawasaki H2R - World Record 400 km/h in 26 sec. HD
+                </p>
+                </a>
+              </div>
+              <a href="https://www.youtube.com/channel/UCIqCBL5tFT8v1-wqKZWX9gA" target="_blank" class="video-title-link">
+              <p class="video-author">
+                Den ProHD
+              </p>
+            </a>
+              <p class="video-stats">
+                50M views · 6 year ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=F8MN0o6RS9o" target="_blank">
+              <img class="thumbnail" src="pics/thumbnail-8.webp">
+            </a>
+            <div class="video-time">1:15:01</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/c/NomadicAmbience" target="_blank" class="profile-pic-link">
+              <img class="profile-picture" src="pics/channel-8.jpg">
+            </a>
+            <div class="tooltip">
+              <div>
+                <img class="profile-picture" src="pics/channel-8.jpg">
+              </div>
+              <div>
+                <p class="tooltiptext1">Den ProHD</p>
+                <p class="tooltiptext2">1.08M subscribers</p>
+              </div>
+            </div>
+            </div>
+            <div class="video-info">
+              <div>
+                <a href="https://www.youtube.com/watch?v=F8MN0o6RS9o" target="_blank" class="video-title-link">
+                <p class="video-title">
+                  Snowfall in Times Square, NYC | Walking in New York City in the Winter Snow, 4k
+                </p>
+                </a>
+              </div>
+              <a href="https://www.youtube.com/c/NomadicAmbience" target="_blank" class="video-title-link">
+              <p class="video-author">
+                Nomadic Ambience
+              </p>
+            </a>
+              <p class="video-stats">
+                9M views · 1 year ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=IVpuTD-2SEo" target="_blank">
+              <img class="thumbnail" src="pics/thumbnail-9.webp">
+            </a>
+            <div class="video-time">1:54:27</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/c/HALIDONMUSIC" target="_blank" class="profile-pic-link">
+              <img class="profile-picture" src="pics/channel-9.jpg">
+            </a>
+            <div class="tooltip">
+              <div>
+                <img class="profile-picture" src="pics/channel-9.jpg">
+              </div>
+              <div>
+                <p class="tooltiptext1">HALIDONMUSIC 
+                </p>
+                <p class="tooltiptext2">3.51M subscribers</p>
+              </div>
+            </div>
+            </div>
+            <div class="video-info">
+              <div>
+                <a href="https://www.youtube.com/watch?v=IVpuTD-2SEo" target="_blank" class="video-title-link">
+                <p class="video-title">
+                  Chopin: Complete Nocturnes (Luke Faulkner)
+                </p>
+                </a>
+              </div>
+              <a href="https://www.youtube.com/c/HALIDONMUSIC" target="_blank" class="video-title-link">
+              <p class="video-author">
+                HALIDONMUSIC 
+              </p>
+            </a>
+              <p class="video-stats">
+                2.2M views · 1 year ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=QSNa8U1yGrM&t=2s" target="_blank">
+              <img class="thumbnail" src="pics/thumbnail-10.webp">
+            </a>
+            <div class="video-time">30:19</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/c/BrunoSaraviaPhotography" target="_blank" class="profile-pic-link">
+              <img class="profile-picture" src="pics/channel-10.jpg">
+            </a>
+            <div class="tooltip">
+              <div>
+                <img class="profile-picture" src="pics/channel-10.jpg">
+              </div>
+              <div>
+                <p class="tooltiptext1">8K VIDEOS ULTRA HD</p>
+                <p class="tooltiptext2">644K subscribers</p>
+              </div>
+            </div>
+            </div>
+            <div class="video-info">
+              <div>
+                <a href="https://www.youtube.com/watch?v=QSNa8U1yGrM&t=2s" target="_blank" class="video-title-link">
+                <p class="video-title">
+                  EARTH in 8K ULTRA HD - Tour Through the Planet Earth - Best Places and Animals Relaxing Music 8K TV
+                </p>
+                </a>
+              </div>
+              <a href="https://www.youtube.com/c/BrunoSaraviaPhotography" target="_blank" class="video-title-link">
+              <p class="video-author">
+                8K VIDEOS ULTRA HD
+              </p>
+            </a>
+              <p class="video-stats">
+                13M views · 1 year ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=x_buNRAzMhg" target="_blank">
+              <img class="thumbnail" src="pics/thumbnail-11.webp">
+            </a>
+            <div class="video-time">12:17</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/c/Pokerstars" target="_blank" class="profile-pic-link">
+              <img class="profile-picture" src="pics/channel-11.jpg">
+            </a>
+            <div class="tooltip">
+              <div>
+                <img class="profile-picture" src="pics/channel-11.jpg">
+              </div>
+              <div>
+                <p class="tooltiptext1">PokerStars</p>
+                <p class="tooltiptext2">1.46M subscribers</p>
+              </div>
+            </div>
+            </div>
+            <div class="video-info">
+              <div>
+                <a href="https://www.youtube.com/watch?v=x_buNRAzMhg" target="_blank" class="video-title-link">
+                <p class="video-title">
+                  POKER BLUFFS, but they get increasingly more EXPENSIVE ♠️ PokerStars
+                </p>
+                </a>
+              </div>
+              <a href="https://www.youtube.com/c/Pokerstars" target="_blank" class="video-title-link">
+              <p class="video-author">
+                PokerStars
+              </p>
+            </a>
+              <p class="video-stats">
+                35K views · 12 hours ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=dy4jGZ--grE" target="_blank">
+              <img class="thumbnail" src="pics/thumbnail-12.webp">
+            </a>
+            <div class="video-time">9:18</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/c/redbullgivesyouwings" target="_blank" class="profile-pic-link">
+              <img class="profile-picture" src="pics/channel-12.jpg">
+            </a>
+            <div class="tooltip">
+              <div>
+                <img class="profile-picture" src="pics/channel-12.jpg">
+              </div>
+              <div>
+                <p class="tooltiptext1">Red Bull
+                </p>
+                <p class="tooltiptext2">10.7M subscribers</p>
+              </div>
+            </div>
+            </div>
+            <div class="video-info">
+              <div>
+                <a href="https://www.youtube.com/watch?v=dy4jGZ--grE" target="_blank" class="video-title-link">
+                <p class="video-title">
+                  Free Solo Climbing Like You've Never Seen It Before w/ Alex Honnold
+
+                </p>
+                </a>
+              </div>
+              <a href="https://www.youtube.com/c/redbullgivesyouwings" target="_blank" class="video-title-link">
+              <p class="video-author">
+                Red Bull
+
+              </p>
+            </a>
+              <p class="video-stats">
+                692K views · 6 months ago
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+
+
+
+  </body>
+</html>
